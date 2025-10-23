@@ -1,0 +1,12 @@
+# To see all resources that exist in kubernetes
+kubectl api-resources
+
+# Show the full yaml of a deployment including defaults
+kubectl get deploy events-web -o yaml
+
+# Store a deployment with all settings into a yaml-file (I guess this is more portable)
+kubectl get deploy events-web -o yaml > demo.yaml
+
+Question: the rollout command keeps a copy of the deployment.yaml that was running before the kubectl -f apply?
+
+Question: where does the minikube tunnel go? 
