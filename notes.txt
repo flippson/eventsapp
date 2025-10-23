@@ -8,5 +8,7 @@ kubectl get deploy events-web -o yaml
 kubectl get deploy events-web -o yaml > demo.yaml
 
 Question: the rollout command keeps a copy of the deployment.yaml that was running before the kubectl -f apply?
+yes & you can set how many are kept in history
 
-Question: where does the minikube tunnel go? 
+Question: where does the minikube tunnel go?
+it's a tunnel to the NIC of our github-codespace VM so we can access things on the public internet.
